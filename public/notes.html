@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Note Taker</h1>
+        <button id="new-note" class="header-icon">+</button> <!-- New Note button with "+" icon -->
+    </header>
+    <main class="notes-section">
+        <aside class="saved-notes">
+            <ul id="existing-notes">
+                <!-- Existing notes will be displayed here -->
+            </ul>
+        </aside>
+        <div id="note-content" class="current-note">
+            <input type="text" id="note-title" placeholder="Note Title">
+            <textarea id="note-text" placeholder="Note Text"></textarea>
+            <button id="save-note">Save Note</button>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-left h1 {
+    font-size: 36px; /* Larger font size for the header */
+    margin-right: 20px;
+    border: none; /* Remove border from the header */
+}
+
+.header-right button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.notes-section {
+    display: flex;
+    width: 100%;
+}
+
+aside {
+    flex: 1;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.saved-notes li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#note-content {
+    flex: 3;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#note-title {
+    font-size: 24px; /* Larger font size for note title */
+    margin-bottom: 10px; /* Add spacing between title and text */
+    border: none; /* Remove border from note title */
+}
+
+#note-text {
+    font-size: 16px; /* Smaller font size for note text */
+    margin-top: 10px; /* Add spacing between title and text */
+    border: none; /* Remove border from note text */
+}
+
+#save-note {
+    background-color: #333; /* Use header color for the save button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+#save-note:hover {
+    background-color: #555; /* Darken color on hover */
+}
+
+#start-button {
+    font-size: 36px; /* Larger font size for the button */
+    padding: 20px 40px; /* Increased padding for a larger button */
+    background-color: #333; /* Use the header's background color */
+    color: white; /* Use the header's text color */
+    text-decoration: none; /* Remove underline */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+#start-button:hover {
+    background-color: #555; /* Darken color on hover */
+}
